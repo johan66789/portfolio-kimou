@@ -1,0 +1,219 @@
+.contact-me{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin: 0rem 1.3rem;
+}
+.title-contact{
+    margin-top: 10rem;
+}
+.my-accountants{
+    width: 90%;
+}
+.my-accountants .icon-email,.my-accountants .icon-linkedin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-accountants svg{
+    background-color:#6751b9;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.my-accountants .email,.my-accountants .linkedin{
+    background-color: transparent;
+    padding: 1.5rem 0.6rem;
+    border: 1.9px solid #6751b9;
+    margin-bottom: 1.3rem;
+    border-radius: 0.6rem;
+
+}
+.my-accountants a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.form-email{
+    width: 90%;
+}
+.error-message{
+    width: 100%;
+    background-color: tomato;
+    color: azure;
+    font-size: 19px;
+    padding: 2rem 1rem;
+}
+.success-message{
+    width: 100%;
+    background-color:lightgreen;
+    color: azure;
+    font-size: 19px;
+    padding: 2rem 1rem;
+}
+form{
+    /* width: 400px; */
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.5rem;
+}
+form input:not([type="submit"]),
+form textarea{
+    width: 90%;
+    flex: 1;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #130f2a;
+    border-radius: 0.6rem;
+    border: 1.5px solid #6751b9;
+    padding: 1.5rem;
+}
+form .button-send input{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    border: 1.5px solid #a892fe;
+    border-radius: 0.6rem;
+    background: linear-gradient(90deg,#a892fe 0%,#6751b9);
+    padding: 0.4rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+form .button-send input:hover{
+    color: #a892fe;
+    background: transparent;
+}
+
+@media screen and (max-width:769px) {
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .title-contact{
+        
+    }
+    .my-accountants{
+        width: 90%;
+    }
+    .my-accountants .icon-email,.my-accountants .icon-linkedin{
+
+    }
+    .my-accountants .email,.my-accountants .linkedin{
+
+    
+    }
+    .my-accountants a{
+    }
+    
+    .form-email{
+        width: 90%;
+    }
+    
+    form{
+
+    }
+    form input:not([type="submit"]),
+    form textarea{
+
+    }
+  }
+  
+  /* tablette*/
+  @media screen and (max-width:999px) {
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center; /* Centre verticalement */
+        align-items: center; /* Centre horizontalement */
+        margin: 0 auto; /* Pour centrer le .contact-me horizontalement */
+    }
+    .my-accountants{
+        width: 100%;
+    }
+    .my-accountants .icon-email,.my-accountants .icon-linkedin{
+        font-size: 20px;
+    }
+    
+    .form-email{
+        width: 90%;
+    }
+  }
+  
+  @media (max-width:1325px) {
+    .contact-me{
+
+    }
+    .title-contact{
+        
+    }
+    .my-accountants{
+        width: 90%;
+    }
+    .my-accountants .icon-email,.my-accountants .icon-linkedin{
+
+    }
+    .my-accountants .email,.my-accountants .linkedin{
+
+    
+    }
+    .my-accountants a{
+    }
+    
+    .form-email{
+        width: 90%;
+    }
+    
+    form{
+
+    }
+    form input:not([type="submit"]),
+    form textarea{
+
+    }
+  }
+  
+  
+  @media (max-width:425px) {
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 1rem;
+    }
+    .my-accountants{
+        width: 100%;
+    }
+    .my-accountants .icon-email,.my-accountants .icon-linkedin{
+       font-size: 20px;
+    }
+
+    .email,.linkedin{
+        width:90%;
+    }
+    .my-accountants .email,.my-accountants .linkedin{
+        font-size: 19px;
+    }
+    .my-accountants a{
+    }
+    
+    .form-email{
+        width: 100%;
+    }
+    
+    form{
+        
+    }
+    form input:not([type="submit"]),
+    form textarea{
+        width: 85%;
+    }
+  }
+  

@@ -1,0 +1,73 @@
+.about-me{
+    width: 1200px;
+    border-radius: 10px;
+    background-color: rgba(30, 29, 29, 0.1);
+    margin: 0rem 1.3rem;
+    padding: 1rem 1rem;
+    margin-top: 10rem;
+}
+.about-me h2{
+    font-weight: 500;
+}
+.about-me h6{
+    width: 7%;
+    border-bottom: 3px solid #7e61e7;
+}
+.my-cv a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 1rem 0.8rem;
+    background-color: #7e61e7;
+    border-radius: 50px;
+}
+
+.paragraph-me p{
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+/* responsive */
+@media screen and (max-width:769px) {
+    .about-me {
+      width: 80%; /* Réduire la largeur de la section "about-me" */
+      /* font-size: 16px;  */
+      margin: 2rem auto; /* Centrer la section "about-me" avec un espace autour */
+      margin-top: 4rem; /* Ajuster la marge supérieure */
+      padding-bottom: 3rem; /* Ajouter un peu de remplissage en bas */
+    }
+    .about-me h6 {
+      width: 14%; /* Ajuster la largeur du sous-titre */
+    }
+  }
+  
+  /* tablette*/
+  @media screen and (max-width:999px) {
+    .about-me {
+      width: 90%; /* Réduire légèrement la largeur de la section "about-me" */
+    }
+    .about-me h6 {
+      width: 5%; /* Ajuster la largeur du sous-titre */
+    }
+  }
+  
+  @media (max-width:1325px) {
+    .about-me {
+      width: 90%; /* Réduire légèrement la largeur de la section "about-me" */
+    }
+    .about-me h6 {
+      width: 5%; /* Ajuster la largeur du sous-titre */
+    }
+  }
+  
+  
+  @media (max-width:425px) {
+    .about-me {
+      width: 78%; /* Réduire légèrement la largeur de la section "about-me" */
+    }
+    .about-me h6 {
+      width: 22%; /* Ajuster la largeur du sous-titre */
+    }
+  }
+  

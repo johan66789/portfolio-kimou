@@ -1,0 +1,130 @@
+.skills-container{
+  margin: 0rem 1.3rem;
+  margin-top: 10rem;
+}
+
+.skills-container h2{
+  font-weight: 500;
+}
+
+.skill-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;  
+  font-size: 19px;
+}
+
+.skill-content .frontend{
+  background-color: rgba(30, 29, 29, 0.1);
+  width: 530px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.skill-content .backend{
+  background-color: rgba(30, 29, 29, 0.1);
+  width: 530px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.skill-content .frontend div{
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  margin-bottom: 1rem;
+}
+
+.skill-content .backend div{
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  margin-bottom: 1rem;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 2rem; /* Augmentation de la hauteur pour un meilleur aspect */
+  background-color: #382e68; /* Couleur de fond légère */
+  border-radius: 1rem; /* Augmentation du rayon de la bordure */
+  margin: 1rem 0;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
+}
+
+.skill-progress {
+  width: 0; /* Progression initiale à 0 */
+  height: 100%; /* Hauteur maximale */
+  background: linear-gradient(180deg, #aa94fe -50%, #7d60e6 50%); /* Dégradé de bleu */
+  border-radius: 1rem;
+  transition: width 1s ease-in-out; /* Transition plus lente */
+  text-align: center; /* Centrer le texte */
+  color: #fff; /* Couleur du texte blanc */
+  font-weight: bold; /* Texte en gras */
+  line-height: 2rem; /* Centrage vertical du texte */
+  box-sizing: border-box; /* Inclure la taille de la bordure */
+}
+
+/* Animation de remplissage progressif */
+.skill-progress {
+  animation: fillProgress 2s forwards;
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%; /* Pourcentage de progression souhaité */
+  }
+}
+
+/* responsive */
+@media screen and (max-width:769px) {
+    .skill-content{
+      width: 100%;
+      flex-direction: column;
+    }
+    .skill-content .frontend{
+      background-color: rgba(30, 29, 29, 0.1);
+      width: 100%;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    .skill-content .backend{
+      background-color: rgba(30, 29, 29, 0.1);
+      width: 100%;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+  }
+  /* tablette*/
+  
+  @media screen and (max-width: 425px) {
+    .skill-content .frontend,
+    .skill-content .backend {
+      width: 98%; /* Réduire la largeur des compétences sur les écrans très petits */
+      padding: 1rem; /* Réduire le rembourrage pour un meilleur ajustement */
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1100px) {
+    .skills-container {
+      margin-top: 10rem; /* Ajuster la marge supérieure pour les tablettes */
+    }
+    .skill-content .frontend,
+    .skill-content .backend {
+      width: 80%; /* Utiliser 45% de la largeur disponible pour chaque compétence */
+      margin-bottom: 2rem; /* Ajouter un espacement entre les compétences */
+    }
+  }
+
+  @media (max-width: 1325px) {
+    .skills-container {
+      margin-top: 10rem; /* Ajuster la marge supérieure pour une meilleure disposition */
+    }
+    .skill-content .frontend,
+    .skill-content .backend {
+      width: 95%; /* Utiliser 45% de la largeur disponible pour chaque compétence */
+      margin-bottom: 2rem; /* Ajouter un espacement entre les compétences */
+    }
+  }
+  
+    
